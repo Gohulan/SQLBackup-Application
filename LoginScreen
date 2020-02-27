@@ -105,15 +105,7 @@ namespace SQLBackUpApp
             blank("backup"); 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-            SqlConnection con = new SqlConnection("Data Source =localhost\\sqlexpress;  Initial Catalog = Master; User Id=sa; Password =Password#123;");
-            con.Open();
-            cmd = new SqlCommand("ALTER LOGIN [sa] WITH PASSWORD=N'Password#123'", con);
-            dr = cmd.ExecuteReader();
-            MessageBox.Show("SA Password Changed to mymicros");
-        }
+       
 
         private void label3_Click(object sender, EventArgs e)
         {
